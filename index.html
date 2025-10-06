@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLID BUILDS CONSTRUCTION LTD.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts: Montserrat (Headings) + Open Sans (Body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="#home"><img src="images/logo.png" alt="Solid Builds Logo" class="logo"></a>
+      <h1 class="site-title">SOLID BUILDS CONSTRUCTION LTD.</h1>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#choose">Why Choose Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#quote">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu Icon -->
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Building with Strength, Precision, and Integrity</h1>
+      <p>Your trusted construction partner for residential and commercial projects.</p>
+      <a href="#quote" class="btn-hero">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Solid Builds Construction LTD, we deliver top-quality construction services that stand the test of time, with 15 + years of experience. From concept to completion, our dedicated team ensures precision, safety, and craftsmanship in every project.</p>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service-box">
+        <img src="images/service1.png" alt="Residential Construction">
+        <h3>Residential Construction</h3>
+        <p>We create modern, durable homes with attention to every detail.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/service2.png" alt="Commercial Projects">
+        <h3>Commercial Projects</h3>
+        <p>Reliable construction for commercial and industrial developments.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/service3.png" alt="Renovations & Extensions">
+        <h3>Renovations & Extensions</h3>
+        <p>Enhance your space with professional renovation and expansion services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+<section id="projects" class="projects">
+  <h2>Our Projects</h2>
+  <div class="project-gallery">
+    <div class="project-item">
+      <img src="images/projects1.png" alt="Project 1">
+      <h3>Modern Family Home</h3>
+      <p>A spacious, contemporary build featuring open-plan living areas and energy-efficient materials for modern family life.</p>
+    </div>
+
+    <div class="project-item">
+      <img src="images/projects2.png" alt="Project 2">
+      <h3>Office Renovation</h3>
+      <p>Transforming a dated workspace into a modern, functional office with improved lighting, layout, and sustainability.</p>
+    </div>
+
+    <div class="project-item">
+      <img src="images/projects3.png" alt="Project 3">
+      <h3>Home Extension</h3>
+      <p>Expanding a family home with a bright, multi-purpose extension that blends seamlessly with the original structure.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section id="choose" class="choose">
+    <h2>Why Choose Us</h2>
+    <div class="choose-boxes">
+      <div class="choose-box">
+        <img src="images/choose1.png" alt="Expert Team">
+        <h3>Expert Team</h3>
+        <p>Our skilled professionals bring decades of experience to every build.</p>
+      </div>
+      <div class="choose-box">
+        <img src="images/choose2.png" alt="Quality Workmanship">
+        <h3>Quality Workmanship</h3>
+        <p>We use only premium materials and proven techniques for lasting results.</p>
+      </div>
+      <div class="choose-box">
+        <img src="images/choose3.png" alt="Customer Satisfaction">
+        <h3>Customer Satisfaction</h3>
+        <p>Your satisfaction is our top priority — we build to exceed expectations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Are Saying</h2>
+    <div class="testimonial-boxes">
+      <div class="testimonial">
+        <p>"Solid Builds transformed our home beyond our expectations. Professional, efficient, and reliable!"</p>
+        <h4>- Sarah D.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Fantastic work on our new office building — quality craftsmanship and excellent communication."</p>
+        <h4>- Mark R.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The best construction company we’ve worked with. They really care about their clients and the final result."</p>
+        <h4>- Emily T.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE FORM SECTION ===== -->
+  <section id="quote" class="quote-section">
+    <h2>Request a Quote</h2>
+    <p>Fill out the form below and our team will get back to you as soon as possible.</p>
+
+    <form id="quoteForm" name="quoteForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="quoteForm">
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Type</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="Residential">Residential Construction</option>
+          <option value="Commercial">Commercial Projects</option>
+          <option value="Renovations">Renovations & Extensions</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Project Details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your project..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Request</button>
+    </form>
+  </section>
+
+  <!-- Thank You Modal -->
+  <div id="thankYouModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h1>Thank You!</h1>
+      <p>We’ve received your request and will get back to you shortly.</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3 class="footer-name">SOLID BUILDS CONSTRUCTION LTD.</h3>
+      <p>Unit 2 Park West Business Park, Dublin 12</p>
+      <p>Email: solidbuildscon@hotmail.com</p>
+	  <img src="images/logo.png" alt="Solid Builds Logo" class="footer-logo">
+
+      <p>© 2025 Solid Builds Construction LTD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
